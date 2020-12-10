@@ -1,0 +1,58 @@
+
+        body {
+            font-family: "Texturina", cursive;
+            background-color: #ffcccc;
+            margin: 0;
+        }
+      #logo {  width: 250px; height: 250px}
+
+       #contato { width: 50px; height: 50px}
+
+       .menu {
+           overflow: hidden;
+           background-color: #ff3399;
+       }
+       .menu a {
+         float: left;
+         display: block;
+         color: #fff;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+         background-color: #ff3399;
+       }
+       .menu a:hover {
+           background-color:#ff9999;
+           color:#fff;
+       }
+       .menu a.active {
+           background-color: #ff33bb;
+           color:#fff;
+       }
+
+       .menu .icon {
+           display: none;
+       }
+
+       @media screen and (max-width: 600px) {
+           .menu a:not(:first-child){display:none;}
+           .menu a.icon {
+               float:right;
+               display: block;
+           }
+       }
+      @media screen and (max-width: 600px) {
+          .menu.responsive {position: relative;}
+          .menu.responsive .icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+          }
+          }
+      .menu.responsive a {
+          float:none;
+          display: block;
+          text-align: left;
+      }
+    
