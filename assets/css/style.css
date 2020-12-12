@@ -20,6 +20,7 @@
     /* Fundo do menu */
     .menu{
         background: #ff6666;
+        margin-bottom: 40px;
     }
     .sub-menu li{
         width: 150px; 
@@ -95,4 +96,11 @@
    float:none;
    display: block;
    text-align: left;
+}
+.card {
+    margin:50px;
+}
+.img-product {
+    height: 250px;
+    width: 250px;
 }
