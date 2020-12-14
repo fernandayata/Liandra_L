@@ -1,106 +1,32 @@
-
-        body {
-            font-family: "Texturina", cursive;
-            background-color: #ffcccc;
-            margin: 0;
-        }
-      #logo {  width: 250px; height: 250px}
-
-       #contato { width: 50px; height: 50px}
-
- /* Reset css */
- *,*:after, *:before{
-     margin:0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: sans-serif;
-     font-size: 11px;
-     line-height: 1.5;
- }
-    /* Fundo do menu */
-    .menu{
-        background: #ff6666;
-        margin-bottom: 40px;
-    }
-    .sub-menu li{
-        width: 150px; 
-    }
-/* Remove as bolinhas do lado das listas */
-.menu .menu-list, .menu .sub-menu{
-    list-style: none;
+body {
+    font-family: "Texturina", cursive;
+    background-color: #ffcccc;
 }
-/* Configura todos os links do menu */
-.menu a{
+
+#menu, #menu ul {
+    background-color: #ff6666;
+}
+
+#menu a {
     color: #fff;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
 }
-/*Faz os <li>s ficarem na horizontal */
-.menu > .menu-list li {
-    float: left;
-  position: relative;  
-}
-/* Configura os links do menu principal */
-.menu > .menu-list  li > a {
-    padding: 20px;
-    margin: 0 5px;
-    background: #ff6666;
-}
-/* Configura o fundo do menu principal quando com mouse hover */
-.menu > .menu-list  li:hover a {
+
+.dropdown-item:hover {
     background: #ff9999;
-} 
-/* Mostra o submenu no evento d mouse hover */
-.menu > .menu-list  li:hover > .sub-menu {
-    display:block;
 }
-/* Configura o estilo do submenu */
-.menu > .menu-list  li > .sub-menu {
-    position: absolute;
-    top: 50px;
-    left: 5px;
-    min-width: 200px;
-    z-index: 1000;
-    display: none;
-} 
-/* clearfix para o menu */
-.menu:after {
-    content: '.';
-    display: block;
-    clear : both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+
+.navbar-toggler-icon {
+    color: #fff;
 }
-@media screen and (max-width: 600px) {
-    .menu ul:not(:first-child){display:none;}
-    .menu ul.icon {
-        float:right;
-        display: block;
-    }
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
 }
-@media screen and (max-width: 600px) {
-   .menu {position: relative;}
-   .menu .icon {
-       position: absolute;
-       right: 0;
-       top: 0;
-   }
-   }
-.menu ul {
-   float:none;
-   display: block;
-   text-align: left;
-}
+
 .card {
-    margin:50px;
-}
-.img-product {
-    height: 250px;
-    width: 250px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 200px;
+    margin: 15px;
 }
