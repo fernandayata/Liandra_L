@@ -2,9 +2,13 @@ body {
     font-family: "Texturina", cursive;
     background-color: #ffcccc;
 }
+#menu {
+    margin-bottom: 15px;
+}
 
 #menu, #menu ul {
     background-color: #ff6666;
+
 }
 
 #menu a {
@@ -18,7 +22,12 @@ body {
 .navbar-toggler-icon {
     color: #fff;
 }
+h3 { color:#ff4d4d;
 
+}
+#principal-title{
+    text-align:center;
+}
 .card-img-top {
     width: 200px;
     height: 200px;
